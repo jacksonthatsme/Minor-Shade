@@ -1,0 +1,34 @@
+#model{
+  width: 520px;
+  height: 520px;
+  display: block;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  &.up{
+    background-position:-520px 0px;
+  }
+  &.up-left{
+    background-position: 0px 0px;
+  }
+  &.up-right{
+    background-position:-1040px 0px;
+  }
+  &.left{
+    background-position:0px -520px;
+  }
+  &.front{
+    background-position:-520px -520px;
+  }
+  &.right{
+    background-position:-1040px -520px;
+  }
+  &.down-left{
+    background-position: 0px -1040px;
+  }
+  &.down{
+    background-position: -520px -1040px;
+  }
+  &.down-right{
+    background-position: -1040px -1040px;
+  }
+}

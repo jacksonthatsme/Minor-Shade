@@ -1,0 +1,9 @@
+.container{
+	margin: 0px auto;
+	width: 100%;
+	text-align: center;
+	&.form{
+		max-width: 400px;
+		background-color: $_black;
+	}
+}

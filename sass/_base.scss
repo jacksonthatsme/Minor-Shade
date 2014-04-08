@@ -1,0 +1,29 @@
+/* COLORS */
+$_black: #0B1221;
+$_white: #ffffff;
+$_red: #A02424;
+/* VARIABLES */
+/* MIXINS */
+@mixin darken($property,$base-color){
+  #{$property}: shade( $base-color, 20% );
+}
+
+/* BASE */
+body{
+  margin: 0px auto;
+  font-size: 12px;
+  font-family: 'Droid Sans Mono';
+  color: $_white;
+  &.product{
+    &.red{
+      @include darken("background-color",$_red);
+      .branding{
+        .logotype{
+          path{
+            @include darken("fill",$_red);
+          }
+        }
+      }
+    }
+  }
+}
