@@ -1,0 +1,19 @@
+$_green: #1BA886;
+$_red: #A02424;
+$_yellow: #F79C39;
+
+body{
+  &.product{
+    /* ----RED----- */
+    &.red{
+      @include colorway($_red, $_red);
+    }
+    /* ----GREEN----- */
+    &.green{
+      @include colorway($_green, #04664C);
+    }
+    &.yellow{
+      @include colorway($_yellow, #B62C2C);
+    }
+  }
+}

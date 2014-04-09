@@ -1,9 +1,10 @@
 section{
   width: 100;
   &.product-description{
+  text-align: center;
   }
   &.model{
-    background-color: $_red;
     padding: 50px 0 0;
+    text-align: center;
   }
 }
