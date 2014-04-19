@@ -1,6 +1,9 @@
 section.navigation{
   position: fixed;
   bottom: 0;
+  .container{
+    position: relative;
+  }
   nav{
     ul{
       li{
@@ -18,11 +21,16 @@ section.navigation{
     padding: 0 0 1em;
   }
   .cart{
-    height: 100px;
-    width: 100px;
-    background-color: aqua;
-    right: 0;
     position: absolute;
+    right: 0;
     bottom: 0;
+    a{
+      line-height: 1.7em;
+      font-weight: 400;
+      font-size: .9em;
+      letter-spacing: .1em;
+      border-bottom: 1px solid $_white;
+      display: inline;
+    }
   }
 }
