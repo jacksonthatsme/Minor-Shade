@@ -1,6 +1,7 @@
 $_green: #1BA886;
 $_red: #A02424;
 $_yellow: #F79C39;
+$_blue: #83D3EA;
 
 body{
   &.product{
@@ -12,8 +13,15 @@ body{
     &.green{
       @include colorway($_green, #04664C);
     }
+    /* ----YELLOW----- */
     &.yellow{
       @include colorway($_yellow, #B62C2C);
+    }
+    &.blue{
+      @include colorway(#83D3EA, #4D7CB7);
+    }
+    &.grey{
+      @include colorway(#E5DDD2, #92A2A1);
     }
   }
 }
