@@ -3,16 +3,27 @@ $_black: #0B1221;
 $_white: #ffffff;
 
 /* VARIABLES */
-$sans: 'PT Sans', sans-serif;
-$mono: 'PT Mono';
 
 /* MIXINS */
 @mixin darken($property,$base-color){
   #{$property}: shade( $base-color, 12% );
 }
-@mixin colorway( $base-color, $text-color ){
-  background-color: $base-color;
-  color: $text-color;
+@mixin background-gradient($color){
+  $shade: shade( $color, 30% );
+  background: $color; /* Old browsers */
+  background: -moz-radial-gradient(bottom, ellipse cover,  $color 0%, $shade 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%,$color), color-stop(100%,$shade)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(bottom, ellipse cover,  $color 0%,$shade 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(bottom, ellipse cover,  $color 0%,$shade 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(bottom, ellipse cover,  $color 0%,$shade 100%); /* IE10+ */
+  background: radial-gradient(ellipse at bottom,  $color 0%,$shade 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{color}', endColorstr='#{$shade}',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */  
+}
+@mixin colorway( $base-color, $compliment ){
+  background-color: $compliment;
+  section.product{
+    @include background-gradient($base-color);
+  }
   .branding{
     .logotype{
       path{
@@ -20,16 +31,14 @@ $mono: 'PT Mono';
       }
     }
   }
-  section{
-    &.model{
-      background-color: mix( $text-color, $base-color, 20% );
-    }
+  .navigation{
+    color: $base-color;
   }
 }
 /* BASE */
 body{
   margin: 0px auto;
-  font-size: 18px;
-  font-family: $mono;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
   color: $_white;
 }

@@ -1,10 +1,38 @@
-section{
-  width: 100;
-  &.product-description{
-  text-align: center;
+.edition-count{
+  height: 11em;
+  width: 11em;
+  border-radius: 6em;
+  margin: 3em auto;
+  padding: 3em 0 0;
+  span{
+    display: inline-block;
+    vertical-align: middle;
+    &.edition{
+      font-size: 4em;
+      font-weight: bold;
+      line-height: .9em;
+      padding: 0 .1em;
+    }
   }
-  &.model{
-    padding: 50px 0 0;
-    text-align: center;
+}
+section.product{
+  padding: 12em 0 0;
+  .container{
+    position: relative;
+  }
+  .information{
+    position: absolute;
+    max-width: 300px;
+    p{
+      padding: 0 0 2em;
+      border-bottom: 2px solid $_white;
+    }
+    .price{
+      margin: 2em 0 0;
+    }
+  }
+  .model{
+    width: intrinsic;
+    margin-left: calc(5% + 250px);
   }
 }
