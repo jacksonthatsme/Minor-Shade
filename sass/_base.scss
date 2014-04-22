@@ -21,6 +21,7 @@ $_white: #ffffff;
 }
 @mixin colorway( $base-color, $compliment ){
   background-color: $compliment;
+  $shade: shade($base-color, 30%);
   section.product{
     @include background-gradient($base-color);
   }
@@ -33,6 +34,18 @@ $_white: #ffffff;
   }
   .navigation{
     color: $base-color;
+    a{
+      border-bottom-color: $base-color;
+    }
+  }
+  .button{
+    background-color: rgba($shade, .5);
+    &:hover{
+      background-color: rgba($shade, .7);
+    }
+    &:active{
+      background-color: rgba($shade, .9);
+    }
   }
 }
 /* BASE */

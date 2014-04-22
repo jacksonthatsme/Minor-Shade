@@ -23,5 +23,8 @@ body{
     &.grey{
       @include colorway(#E5DDD2, #92A2A1);
     }
+    &.orange{
+      @include colorway(#FBD3AC, #C38C5B);
+    }
   }
 }

@@ -1,0 +1,47 @@
+@keyframes bounce {
+  0%{
+    bottom: 1px;
+  }
+  40%{
+    bottom: 11px;
+  }
+  50%{
+    bottom: 11px;
+  }
+  80%{
+    bottom: 1;
+  /*
+  -webkit-transform: scaleX(1.4);
+    -moz-transform: scaleX(1.4);
+    -ms-transform: scaleX(1.4);
+    -o-transform: scaleX(1.4);
+*/
+  }
+  90%{
+    bottom: 3px;
+  }
+  100%{
+    bottom: 1px;
+  }
+}
+@-webkit-keyframes bounce {
+  0%{
+    bottom: 1px;
+  }
+  40%{
+    bottom: 11px;
+  }
+  50%{
+    bottom: 11px;
+  }
+  80%{
+    bottom: 1px;
+    /* -webkit-transform: scaleX(1.4); */
+  }
+  90%{
+    bottom: 3px;
+  }
+  100%{
+    bottom: 1px;
+  }
+}

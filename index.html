@@ -1,25 +1,44 @@
 <!-- @include _header -->
 <!-- @javascript rotate-head -->
 </head>
-<body class="product grey">
+<body class="product orange">
+  <!-- @include _social -->
   <!-- @include _branding -->
   <!-- @include _navigation -->
   <section class="product">
     <div class="container">
-      <div class="information">
-        <h1>Product Name</h1>
-        <h3>Color</h3>
-        <p>This is the hat description, this is the hat description</p>
-        <div class="price">
-          <h2>$65.00</h2>
+      <div class="product-wrap">
+        <div class="information">
+          <h1>Minor Shade x Timespent</h1>
+          <h3>Color</h3>
+          <p>This is the hat description, this is the hat description</p>
+          <div class="price">
+            <h2>$65.00</h2>
+          </div>
+          <div class="button" id="add-to-cart">
+              Add To Cart
+          </div>
         </div>
-        <div class="button">
-            Add To Cart
+        <div class="social">
+          <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-type="button_count"></div>
+          <div class="twitter">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
+          </div>
         </div>
-      </div>
-      <div class="model">
-        <div id="model" style="background-image: url('images/model_macro.png');"></div>
+        <div class="model">
+          <div id="model" style="background-image: url('images/model_macro.png');"></div>
+        </div>
+        <div class="edition-count">
+          <h2>3</h2>
+          <h2>5</h2>
+          <h3>Available</h3>
+        </div>
       </div>
     </div>
+  </section>
+  <section class="wayfinding">
+    <a href="">Next Hat</a>
+    <a href="">Index</a>
+    <a href="">Previous Hat</a>
   </section>
 <!-- @include _footer -->

@@ -1,23 +1,35 @@
 .edition-count{
-  height: 11em;
-  width: 11em;
+  height: 8em;
+  width: 8em;
   border-radius: 6em;
-  margin: 3em auto;
-  padding: 3em 0 0;
-  span{
-    display: inline-block;
-    vertical-align: middle;
-    &.edition{
-      font-size: 4em;
-      font-weight: bold;
-      line-height: .9em;
-      padding: 0 .1em;
+  padding: 1.7em 0 0;
+  border: 2px solid $_white;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  h2{
+    display: inline;
+  }
+  h2 + h2{
+    &:before{
+      height: 40px;
+      width: 2px;
+      background-color: $_white;
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+      -webkit-transform: rotate(30deg);
+      -o-transform: rotate(30deg);
+      margin: 0 .3em;
     }
   }
 }
 section.product{
   padding: 12em 0 0;
-  .container{
+  .product-wrap{
     position: relative;
   }
   .information{
@@ -35,4 +47,8 @@ section.product{
     width: intrinsic;
     margin-left: calc(5% + 250px);
   }
+}
+.social{
+  position: absolute;
+  bottom: 1em;
 }
