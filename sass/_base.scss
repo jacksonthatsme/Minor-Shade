@@ -47,6 +47,13 @@ $_white: #ffffff;
       background-color: rgba($shade, .9);
     }
   }
+  .wayfinding{
+    border-color: $base-color;
+    a{
+      border-color: $base-color;
+      color: $base-color;
+    }
+  }
 }
 /* BASE */
 body{
