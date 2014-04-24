@@ -3,28 +3,24 @@ $_red: #A02424;
 $_yellow: #F79C39;
 $_blue: #83D3EA;
 
-body{
-  &.product{
-    /* ----RED----- */
-    &.red{
-      @include colorway($_red, $_red);
-    }
-    /* ----GREEN----- */
-    &.green{
-      @include colorway($_green, #04664C);
-    }
-    /* ----YELLOW----- */
-    &.yellow{
-      @include colorway($_yellow, #B62C2C);
-    }
-    &.blue{
-      @include colorway(#83D3EA, #4D7CB7);
-    }
-    &.grey{
-      @include colorway(#E5DDD2, #92A2A1);
-    }
-    &.orange{
-      @include colorway(#FBD3AC, #C38C5B);
-    }
-  }
+/* ----RED----- */
+.red{
+  @include colorway($_red, $_red);
+}
+/* ----GREEN----- */
+.green{
+  @include colorway($_green, #04664C);
+}
+/* ----YELLOW----- */
+.yellow{
+  @include colorway($_yellow, #B62C2C);
+}
+.blue{
+  @include colorway(#83D3EA, #4D7CB7);
+}
+.grey{
+  @include colorway(#E5DDD2, #92A2A1);
+}
+.orange{
+  @include colorway(#FBD3AC, #C38C5B);
 }

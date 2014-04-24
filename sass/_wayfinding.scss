@@ -1,10 +1,18 @@
-section.wayfinding{
-  text-align: center;
+.wayfinding{
+  width: 100%;
+  border-bottom: 2px solid $_white;
+  border-top: 2px solid $_white;
+  margin: 2em 0 0;
   a{
     display: inline-block;
     padding: .4em 0;
+    text-align: center;
+    width: 50%;
     &:hover{
       background-color: rgba(0,0,0, .1);
+    }
+    &:last-child{
+      border-left: 2px solid $_white;
     }
   }
 }

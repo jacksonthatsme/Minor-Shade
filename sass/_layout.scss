@@ -2,6 +2,9 @@
 	margin: 0px auto;
 	width: 100%;
   padding: 0 5% 0;
+  section.content & {
+    position: relative;
+  }
 }
 section{
   width: 100%;
@@ -10,7 +13,21 @@ section{
   }
 }
 .left-column{
-  width: 300px;
   position: absolute;
-  height: 100%;
+  max-width: 300px;
+}
+.center-column{
+  width: intrinsic;
+  margin-left: calc(5% + 200px);
+  padding-right: 70px;
+}
+.right-column{
+  position: absolute;
+  right: 0;
+  .product-wrap &{
+    top: 0;
+  }
+  li.product &{
+    bottom: 0;
+  }
 }

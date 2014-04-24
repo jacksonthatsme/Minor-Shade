@@ -5,9 +5,6 @@ $_white: #ffffff;
 /* VARIABLES */
 
 /* MIXINS */
-@mixin darken($property,$base-color){
-  #{$property}: shade( $base-color, 12% );
-}
 @mixin background-gradient($color){
   $shade: shade( $color, 30% );
   background: $color; /* Old browsers */
@@ -22,6 +19,13 @@ $_white: #ffffff;
 @mixin colorway( $base-color, $compliment ){
   background-color: $compliment;
   $shade: shade($base-color, 30%);
+  section.navigation{
+    color: $base-color;
+    border-color: $base-color;
+    a{
+      border-bottom-color: $base-color;
+    }
+  }
   section.product{
     @include background-gradient($base-color);
   }
@@ -30,12 +34,6 @@ $_white: #ffffff;
       path{
         fill: $base-color;
       }
-    }
-  }
-  .navigation{
-    color: $base-color;
-    a{
-      border-bottom-color: $base-color;
     }
   }
   .button{
@@ -47,18 +45,10 @@ $_white: #ffffff;
       background-color: rgba($shade, .9);
     }
   }
-  .wayfinding{
-    border-color: $base-color;
-    a{
-      border-color: $base-color;
-      color: $base-color;
-    }
-  }
 }
 /* BASE */
 body{
   margin: 0px auto;
   font-size: 16px;
   font-family: 'Raleway', sans-serif;
-  color: $_white;
 }
