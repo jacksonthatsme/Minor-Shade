@@ -6,19 +6,19 @@ $_white: #ffffff;
 
 /* MIXINS */
 @mixin background-gradient($color){
-  $shade: shade( $color, 30% );
+  $hade: darken( $color, 33% );
   background: $color; /* Old browsers */
-  background: -moz-radial-gradient(bottom, ellipse cover,  $color 0%, $shade 100%); /* FF3.6+ */
-  background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%,$color), color-stop(100%,$shade)); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(bottom, ellipse cover,  $color 0%,$shade 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(bottom, ellipse cover,  $color 0%,$shade 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(bottom, ellipse cover,  $color 0%,$shade 100%); /* IE10+ */
-  background: radial-gradient(ellipse at bottom,  $color 0%,$shade 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{color}', endColorstr='#{$shade}',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */  
+  background: -moz-radial-gradient(bottom, ellipse cover,  $color 0%, $hade 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%,$color), color-stop(100%,$hade)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(bottom, ellipse cover,  $color 0%,$hade 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(bottom, ellipse cover,  $color 0%,$hade 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(bottom, ellipse cover,  $color 0%,$hade 100%); /* IE10+ */
+  background: radial-gradient(ellipse at bottom,  $color 0%,$hade 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{color}', endColorstr='#{$hade}',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */  
 }
 @mixin colorway( $base-color, $compliment ){
   background-color: $compliment;
-  $shade: shade($base-color, 30%);
+  $hade: darken($base-color, 30%);
   section.navigation{
     color: $base-color;
     border-color: $base-color;
@@ -37,12 +37,12 @@ $_white: #ffffff;
     }
   }
   .button{
-    background-color: rgba($shade, .5);
+    background-color: rgba($hade, .5);
     &:hover{
-      background-color: rgba($shade, .7);
+      background-color: rgba($hade, .7);
     }
     &:active{
-      background-color: rgba($shade, .9);
+      background-color: rgba($hade, .9);
     }
   }
 }

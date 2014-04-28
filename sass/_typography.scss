@@ -16,6 +16,9 @@ h3{
   h1 + &{
     margin: 2em 0 0;
   }
+  p + &{
+    margin-top: 1.2em;
+  }
 }
 p{
   font-weight: 400;

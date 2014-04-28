@@ -15,12 +15,21 @@ $_blue: #83D3EA;
 .yellow{
   @include colorway($_yellow, #B62C2C);
 }
-.blue{
-  @include colorway(#83D3EA, #4D7CB7);
+.blue-pink{
+  @include colorway(#BBE3E3, #E2605B);
 }
-.grey{
+.grey-blue{
   @include colorway(#E5DDD2, #92A2A1);
 }
 .orange{
   @include colorway(#FBD3AC, #C38C5B);
+}
+.pink-purple{
+  @include colorway(#F7C9CA, #4F447C);
+}
+.coral{
+  @include colorway(#F2D8C9, #398D90);
+}
+.yellow-red{
+  @include colorway(#FFE672,#D3534D);
 }

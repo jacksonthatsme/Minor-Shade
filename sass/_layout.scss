@@ -2,14 +2,17 @@
 	margin: 0px auto;
 	width: 100%;
   padding: 0 5% 0;
-  section.content & {
-    position: relative;
-  }
+}
+.relative-wrap{
+  position: relative;
 }
 section{
   width: 100%;
   &.content{
     padding: 12em 0 0;
+    &.product{
+      padding: 9em 0 0;
+    }
   }
 }
 .left-column{
@@ -24,7 +27,7 @@ section{
 .right-column{
   position: absolute;
   right: 0;
-  .product-wrap &{
+  .relative-wrap &{
     top: 0;
   }
   li.product &{
