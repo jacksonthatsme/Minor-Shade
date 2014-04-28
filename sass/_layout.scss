@@ -27,7 +27,7 @@ section{
 .right-column{
   position: absolute;
   right: 0;
-  .relative-wrap &{
+  section.product &{
     top: 0;
   }
   li.product &{

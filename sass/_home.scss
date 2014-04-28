@@ -1,9 +1,35 @@
 body.home{
   ul.index{
+    color: $_white;
     li.product{
       width: 100%;
       display: block;
-      padding: 2em 0;
+      padding: 4em 0 3.5em;
+      img{
+        width: 25em;
+      }
+      .title{
+        padding: 0 0 2.5em;
+      }
+      .right-column{
+        transition-duration: .1s;
+        -webkit-transition-duration: .1s;
+        -o-transition-duration: .1s;
+        -moz-transition-duration: .1s;
+      }
+    }
+    a{
+      &:hover{
+        li.product{
+          .right-column{
+            bottom: 1.5em;
+            transition-duration: .2s;
+            -webkit-transition-duration: .2s;
+            -o-transition-duration: .2s;
+            -moz-transition-duration: .2s;
+          }
+        }
+      }
     }
   }
 }
