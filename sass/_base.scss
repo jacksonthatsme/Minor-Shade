@@ -28,6 +28,14 @@ $_white: #ffffff;
   }
   section.product{
     @include background-gradient($base-color);
+    @media all and (max-width: 860px){
+      background: none;
+    }
+  }
+  .model{
+    @media all and (max-width: 860px){
+      @include background-gradient($base-color);
+    }
   }
   .branding{
     .logotype{

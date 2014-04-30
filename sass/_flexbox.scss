@@ -18,7 +18,9 @@
   flex: 1;
   &.model{
     flex-grow: 3;
-    flex-order: 1;
+    @media all and (max-width: 860px){
+      order: 1;
+    }
     text-align: center;
      @media all and (min-width: 1200px){
        flex-grow:2;
@@ -32,7 +34,9 @@
     }
   }
   &.information{
-    flex-order: 2;
+    @media all and (max-width: 860px){
+      order: 2;
+    }
     flex-grow: 1;
     flex-shrink: 0;
     min-width: 250px;
@@ -43,7 +47,9 @@
     justify-content: space-between;
   }
   &.edition-count{
-    flex-order: 3;
+    @media all and (max-width: 860px){
+      order: 3;
+    }
     flex-shrink: 2;
     flex-basis:8em;
     flex-grow: 0;
