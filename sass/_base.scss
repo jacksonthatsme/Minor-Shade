@@ -3,6 +3,8 @@ $_black: #0B1221;
 $_white: #ffffff;
 
 /* VARIABLES */
+$med-bp: 'all and (max-width: 860px)';
+
 
 /* MIXINS */
 @mixin background-gradient($color){
