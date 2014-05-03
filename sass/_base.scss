@@ -4,6 +4,8 @@ $_white: #ffffff;
 
 /* VARIABLES */
 $med-bp: 'all and (max-width: 860px)';
+$med-sm-bp: 'all and (max-width: 600px)';
+$sm-bp: 'all and (max-width: 400px)';
 
 
 /* MIXINS */
@@ -30,6 +32,14 @@ $med-bp: 'all and (max-width: 860px)';
   }
   section.product{
     @include background-gradient($base-color);
+    @media #{$med-bp}{
+      background: none;
+    }
+  }
+  .model-wrap{
+    @media #{$med-bp}{
+      @include background-gradient($base-color);
+    }
   }
   .branding{
     .logotype{
