@@ -12,25 +12,36 @@ section{
     padding: 12em 0 0;
     &.product{
       padding: 9em 0 0;
+      @media #{$med-bp}{
+        padding: 0;
+      }
     }
   }
 }
 .left-column{
-  position: absolute;
-  max-width: 300px;
+  @media #{$med-bp}{
+    width: 100%;
+  }
 }
 .center-column{
   width: intrinsic;
-  margin-left: calc(5% + 200px);
-  padding-right: 70px;
+  margin:0 auto;
+  @media #{$med-bp}{
+    padding: 0;
+  }
 }
 .right-column{
-  position: absolute;
   right: 0;
-  section.product &{
-    top: 0;
-  }
   li.product &{
     bottom: 0;
   }
+}
+.absolute{
+  position: absolute;
+  @media #{$med-bp}{
+    position: static;
+  }
+}
+.top{
+  top:0;
 }

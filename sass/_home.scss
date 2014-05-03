@@ -5,17 +5,40 @@ body.home{
       width: 100%;
       display: block;
       padding: 4em 0 3.5em;
+      @media #{$med-bp}{
+          padding: 0;
+          text-align: center;
+          .button{
+            margin: 1em auto 0;
+          }
+          .container{
+            margin: 0;
+            padding: 0;
+          }
+        }
       img{
         width: 25em;
       }
       .title{
         padding: 0 0 2.5em;
+        @media #{$med-bp}{
+          padding: 14em 0 4.5em;
+        }
       }
       .right-column{
         transition-duration: .1s;
         -webkit-transition-duration: .1s;
         -o-transition-duration: .1s;
         -moz-transition-duration: .1s;
+        @media #{$med-bp}{
+          position: absolute;
+          top: -2em;
+          width: 100%;
+          margin: 0 auto;
+          img{
+            margin: 0 auto;
+          }
+        }
       }
     }
     a{
@@ -27,6 +50,9 @@ body.home{
             -webkit-transition-duration: .2s;
             -o-transition-duration: .2s;
             -moz-transition-duration: .2s;
+            @media #{$med-bp}{
+              top: -3em;
+            }
           }
         }
       }

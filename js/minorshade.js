@@ -9,6 +9,7 @@ $('#add-to-cart').click(function(){
   }, 1200);
 });
 
+
 /*
 var model = new HeadImage("model");
 model.setImageDirection();

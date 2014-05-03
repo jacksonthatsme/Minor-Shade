@@ -4,6 +4,14 @@
   display: block;
   background-repeat: no-repeat;
   background-size: 300%;
+  @media #{$med-sm-bp}{
+    width: 400px;
+    height: 400px;
+  }
+  @media #{$sm-bp}{
+    width: 260px;
+    height: 260px;
+  }
   &.up{
     background-position:50% 0%;
   }
