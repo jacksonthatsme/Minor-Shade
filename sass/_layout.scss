@@ -18,11 +18,12 @@ section{
 .left-column{
   position: absolute;
   max-width: 300px;
+  top: 0;
 }
 .center-column{
   width: intrinsic;
-  margin-left: calc(5% + 200px);
-  padding-right: 70px;
+  margin:0 auto;
+  padding-left: 160px;
 }
 .right-column{
   position: absolute;
