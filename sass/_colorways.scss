@@ -1,35 +1,15 @@
-$_green: #1BA886;
-$_red: #A02424;
-$_yellow: #F79C39;
-$_blue: #83D3EA;
-
-/* ----RED----- */
-.red{
-  @include colorway($_red, $_red);
+.timespent{
+  @include colorway(#BBE3E3, #4B66B1);
 }
-/* ----GREEN----- */
-.green{
-  @include colorway($_green, #04664C);
+.bluestripe{
+  @include colorway(#BBE3E3, #6C685D);
 }
-/* ----YELLOW----- */
-.yellow{
-  @include colorway($_yellow, #B62C2C);
+.fuckingsweet-green{
+  @include colorway(#BBE3E3, #DF4755);
 }
-.blue-pink{
-  @include colorway(#BBE3E3, #E2605B);
+.frootloops{
+  @include colorway(#BBE3E3, #E1A950);
 }
-.grey-blue{
-  @include colorway(#E5DDD2, #92A2A1);
-}
-.orange{
-  @include colorway(#FBD3AC, #C38C5B);
-}
-.pink-purple{
-  @include colorway(#F7C9CA, #4F447C);
-}
-.coral{
-  @include colorway(#F2D8C9, #398D90);
-}
-.yellow-red{
-  @include colorway(#FFE672,#D3534D);
+.fuckingsweet-red{
+  @include colorway(#BBE3E3, #4EC19A);
 }
