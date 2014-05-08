@@ -61,6 +61,9 @@ section.product{
 }
 .social{
   margin: 4em 0 0;
+  @media #{$sm-bp}{
+    margin: 1em 0 0;
+  }
   div{
     display: inline-block;
     vertical-align: text-top;
@@ -86,13 +89,19 @@ section.product{
   font-size: 2em;
   height: 2em;
   width: 2em;
-  background-color: rgba(255,255,255,.3);
   border-radius: 1em;
   padding: .5em .8em;
+  opacity: .7;
 }
 .slideshow-nav-next{
   right: 0;
+  @media #{$sm-bp}{
+    right: -1em;
+  }
 }
 .slideshow-nav-prev{
   left: 0;
+  @media #{$sm-bp}{
+    left: -.7em;
+  }
 }

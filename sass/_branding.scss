@@ -1,10 +1,14 @@
+.branding{
+  position: absolute;
+  z-index: 500;
+}
 .logo{
   padding: .3em 0 0;
   font-size: 6em;
   color: $_black;
   a{
     &:hover{
-      opacity: .6;
+      opacity: .8;
     }
   }
 }

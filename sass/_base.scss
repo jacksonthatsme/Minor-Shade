@@ -23,7 +23,7 @@ $sm-bp: 'all and (max-width: 400px)';
 @mixin colorway( $base-color, $compliment ){
   background-color: $compliment;
   $hade: darken($base-color, 30%);
-  section.navigation{
+  nav{
     color: $base-color;
     border-color: $base-color;
     a{
@@ -35,6 +35,9 @@ $sm-bp: 'all and (max-width: 400px)';
   }
   .logo{
     color: $base-color;
+  }
+  .slideshow-nav{
+    background-color: $base-color;
   }
 }
 /* BASE */
