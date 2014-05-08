@@ -5,7 +5,6 @@
   padding: 1.7em 0 0;
   border: 2px solid $_white;
   text-align: center;
-  margin: 3em 0 0;
   @media #{$med-bp}{
     display: none;
   }
@@ -30,12 +29,6 @@
 }
 section.product{
   color: $_white;
-  @media #{$med-bp}{
-    margin-bottom: 6em;
-  }
-  .product-wrap{
-    position: relative;
-  }
   .information{
     margin: 3em 0 0;
     width: 300px;
@@ -76,19 +69,26 @@ section.product{
 }
 .model-wrap{
   padding-left: 10em;
+  width: intrinsic;
+  margin:0 auto;
   @media #{$med-bp}{
-    padding: 7em 0 0;
+    padding: 0;
   }
 }
 .slideshow-nav{
-  bottom: 3em;
+  bottom: 5em;
   cursor: pointer;
   position: absolute;
   z-index: 100;
   -webkit-user-select: none; /* Chrome/Safari */        
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+ */
-  display: none;
+  font-size: 2em;
+  height: 2em;
+  width: 2em;
+  background-color: rgba(255,255,255,.3);
+  border-radius: 1em;
+  padding: .5em .8em;
 }
 .slideshow-nav-next{
   right: 0;

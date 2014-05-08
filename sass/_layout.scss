@@ -1,4 +1,5 @@
-.container{
+/*
+.container, .wrap{
 	margin: 0px auto;
 	width: 100%;
   padding: 0 5% 0;
@@ -45,4 +46,31 @@ section{
 }
 .top{
   top:0;
+}
+*/
+.wrap{
+	margin: 0px auto;
+	width: 100%;
+  padding: 0 5% 0;
+  max-width: 1300px;
+}
+section.product{
+  width: 100%;
+  &.bottom{
+    position: absolute;
+    top: 0;
+    padding-top: 8em;
+    @media #{$med-bp}{
+      position: static;
+      padding-top: 0;
+    }
+  }
+}
+.relative-wrap{
+  position: relative;
+}
+.right-column{
+  position: absolute;
+  top: 0;
+  right: 0;
 }
