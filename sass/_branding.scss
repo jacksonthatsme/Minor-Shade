@@ -1,16 +1,14 @@
-section.branding{
-  padding: 1em 0 0;
+.branding{
   position: absolute;
   z-index: 500;
-  .logotype{
-    width: 200px;
-    height: 120px;
-    @media #{$sm-bp}{
-      height: 80px;
-      width: 160px;
-    }
-    path{
-      fill: $_black;
+}
+.logo{
+  padding: .3em 0 0;
+  font-size: 6em;
+  color: $_black;
+  a{
+    &:hover{
+      opacity: .8;
     }
   }
 }

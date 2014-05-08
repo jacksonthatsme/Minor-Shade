@@ -1,33 +1,37 @@
-section.navigation{
+nav{
   position: fixed;
-  bottom: 0;
-  .container{
-    position: relative;
+  bottom: 1em;
+  @media #{$med-bp}{
+     bottom: 0px;
+     left: 0px;
+     right: 0px;
+     width: 100%;
+     background-color: $_black;
+     padding: .4em 0;
+     z-index: 400;
   }
-  nav{
-    ul{
-      li{
-        display: inline-block;
-        padding: 0 1.2em 0 0;
-        a{
-          line-height: 1.7em;
-          font-weight: 400;
-          font-size: .9em;
-          letter-spacing: .1em;
-          border-bottom: 1px solid;
-          border-bottom-color: inherit;
-        }
-        #cart-count{
-          position: absolute;
-          bottom: 0;
-          margin-left: 4px;
-          background-color: rgba(0,0,0,.2);
-          padding: 2px 6px;
-          border-radius: 12px;
-        }
+  ul{
+    li{
+      display: inline-block;
+      padding: 0 1.2em 0 0;
+      line-height: 1.7em;
+      font-weight: 400;
+      font-size: .9em;
+      letter-spacing: .1em;
+      a{
+        border-bottom: 1px solid;
+        border-bottom-color: inherit;
+      }     
+      #cart-count{
+        position: absolute;
+        bottom: 0;
+        margin-left: 4px;
+        background-color: rgba(0,0,0,.2);
+        padding: 0px 6px;
+        border-radius: 12px;
       }
     }
-    padding: 0 0 1em;
   }
 }
+
 
