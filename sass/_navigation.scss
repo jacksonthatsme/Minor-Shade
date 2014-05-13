@@ -1,6 +1,7 @@
 nav{
   position: fixed;
   bottom: 1em;
+  color: $_white;
   @media #{$med-bp}{
      bottom: 0px;
      left: 0px;

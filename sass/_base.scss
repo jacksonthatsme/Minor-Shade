@@ -23,6 +23,7 @@ $tall-bp: 'all and (min-height: 860px)';
 @mixin colorway( $base-color, $compliment ){
   background-color: $compliment;
   $hade: darken($base-color, 30%);
+  $darker-shade: darken($base-color, 40%);
   nav{
     color: $base-color;
     border-color: $base-color;
@@ -38,6 +39,17 @@ $tall-bp: 'all and (min-height: 860px)';
   }
   .slideshow-nav{
     background-color: $base-color;
+  }
+  li.product{
+    @include background-gradient($base-color);
+    .hat{
+      &:after{
+        background-color: transparent;
+        -webkit-box-shadow: 0px 75px 40px 0px $darker-shade;
+        -moz-box-shadow: 0px 75px 40px 0px $darker-shade;
+        box-shadow: 0px 75px 40px 0px $darker-shade;
+      }
+    }
   }
 }
 /* BASE */

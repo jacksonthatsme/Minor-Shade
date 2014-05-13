@@ -4,9 +4,9 @@ body.home{
     li.product{
       width: 100%;
       display: block;
-      padding: 4em 0 3.5em;
+      padding: 11em 0 3.5em;
       @media #{$med-bp}{
-          padding: 0;
+          padding: 0 0 1em;
           text-align: center;
           .button{
             margin: 1em auto 0;
@@ -17,19 +17,26 @@ body.home{
           }
         }
       img{
-        width: 25em;
+        width: 35em;
       }
       .title{
         padding: 0 0 2.5em;
         @media #{$med-bp}{
           padding: 14em 0 4.5em;
         }
+        @media #{$med-sm-bp}{
+          padding: 12em 0 4.5em;
+        }
       }
-      .right-column{
+      .hat{
         transition-duration: .1s;
         -webkit-transition-duration: .1s;
         -o-transition-duration: .1s;
         -moz-transition-duration: .1s;
+        position: absolute;
+        right: 0;
+        bottom: 0px;
+        z-index: 100;
         @media #{$med-bp}{
           position: absolute;
           top: -2em;
@@ -37,6 +44,26 @@ body.home{
           margin: 0 auto;
           img{
             margin: 0 auto;
+            width: 25em;
+          }
+        }
+        @media #{$med-sm-bp}{
+          img{
+            width: 20em;
+          }
+        }
+        &:after{
+          content: " ";
+          display: block;
+          width: 80%;
+          height: 4em;
+          position: absolute;
+          bottom: 4.5em;
+          right: 4em;
+          z-index: -1;
+          border-radius: 50%;
+          @media #{$med-bp}{
+            display: none;
           }
         }
       }
@@ -44,8 +71,8 @@ body.home{
     a{
       &:hover{
         li.product{
-          .right-column{
-            bottom: 1.5em;
+          .hat{
+            bottom: 1em;
             transition-duration: .2s;
             -webkit-transition-duration: .2s;
             -o-transition-duration: .2s;
