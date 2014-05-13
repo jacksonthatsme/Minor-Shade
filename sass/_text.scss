@@ -2,4 +2,14 @@ body.text{
  section.content{
    margin-bottom: 8em;
  }
+ h1{
+   display: inline-block;
+   vertical-align: text-top;
+   padding: 0 1.5em 0 0;
+   margin-bottom: 1em;
+ }
+ .text-wrap{
+   display: inline-block;
+   vertical-align: text-top;
+ }
 }

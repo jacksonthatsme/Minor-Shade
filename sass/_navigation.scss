@@ -2,6 +2,12 @@ nav{
   position: fixed;
   bottom: 1em;
   color: $_white;
+  body.text &{
+    color: $_black;
+    @media #{$med-bp}{
+      color: $_white;
+    }
+  }
   @media #{$med-bp}{
      bottom: 0px;
      left: 0px;
@@ -10,6 +16,7 @@ nav{
      background-color: $_black;
      padding: .4em inherit;
      z-index: 400;
+     color: $_white;
   }
   @media all and (max-height: 700px){
     bottom: 0px;
@@ -39,6 +46,9 @@ nav{
         background-color: rgba(0,0,0,.2);
         padding: 0px 6px;
         border-radius: 12px;
+        @media #{$med-bp}{
+          background-color: rgba(255,255,255, .2);
+        }
       }
     }
   }
