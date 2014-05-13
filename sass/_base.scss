@@ -6,7 +6,7 @@ $_white: #ffffff;
 $med-bp: 'all and (max-width: 860px)';
 $med-sm-bp: 'all and (max-width: 600px)';
 $sm-bp: 'all and (max-width: 400px)';
-
+$tall-bp: 'all and (min-height: 860px)';
 
 /* MIXINS */
 @mixin background-gradient($color){

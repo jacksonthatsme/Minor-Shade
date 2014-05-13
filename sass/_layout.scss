@@ -7,6 +7,12 @@
 section.product{
   width: 100%;
   padding-top: 8em;
+  @media #{$tall-bp}{
+    padding-top: 11em;
+  }
+  @media #{$tall-bp} and (min-width: 1300px){
+    padding-top: 10%;
+  }
   &.bottom{
     position: absolute;
     top: 0;

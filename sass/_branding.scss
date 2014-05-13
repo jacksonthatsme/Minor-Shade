@@ -3,9 +3,17 @@
   z-index: 500;
 }
 .logo{
-  padding: .3em 0 0;
+  padding: .4em 0 0;
   font-size: 6em;
   color: $_black;
+  @media #{$sm-bp}{
+    font-size: 4em;
+  }
+/*
+  @media #{$tall-bp} and (max-width: 1300px){
+    padding: .4em 0 0;
+  }
+*/
   a{
     &:hover{
       opacity: .8;

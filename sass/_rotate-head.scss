@@ -4,6 +4,10 @@
   display: block;
   background-repeat: no-repeat;
   background-size: 300%;
+  @media all and (min-width:1200px) and (min-height: 860px){
+    height: 620px;
+    width: 620px;
+  }
   @media #{$med-sm-bp}{
     width: 400px;
     height: 400px;

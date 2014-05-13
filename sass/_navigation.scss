@@ -7,8 +7,17 @@ nav{
      right: 0px;
      width: 100%;
      background-color: $_black;
-     padding: .4em 0;
+     padding: .4em inherit;
      z-index: 400;
+  }
+  @media all and (max-height: 700px){
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    background-color: $_black;
+    padding: .4em inherit;
+    z-index: 400;
   }
   ul{
     li{
